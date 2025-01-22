@@ -77,7 +77,7 @@ jobs:
         run: echo "Deploying..."
   report:
     needs: [lint, deploy] #runs even if deploy job gets skipped
-    if: failure()
+    if: failure() #workflow must have failed when this job starts
     runs-on: ubuntu-latest
     steps: 
       - name: Output Information
