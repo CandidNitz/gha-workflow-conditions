@@ -12,7 +12,7 @@ jobs:
                     operating-system: ubuntu-latest
                 exclude: #add combinations to be excluded from generated matrix
                   - node-version: 12
-                    operation-system: windows-latest
+                    operating-system: windows-latest
         runs-on: ${{ matrix.operating-system }}
         steps:
           - name: Get Code
