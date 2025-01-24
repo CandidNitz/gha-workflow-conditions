@@ -8,7 +8,7 @@ on:
         default: dist
         type: string
 jobs:
-    deploy: 
+    deploy-common: 
         runs-on: ubuntu-latest
         steps: 
           - name: Get Code
