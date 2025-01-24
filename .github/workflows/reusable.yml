@@ -11,7 +11,7 @@ on:
     #  input-secret:
     #    required: false
     outputs:
-      result:
+      reusable-result:
         description: the result of deploy operation
         value: ${{ jobs.deploy-common.outputs.outcome }} # only supported for reusable workflows
 jobs:
